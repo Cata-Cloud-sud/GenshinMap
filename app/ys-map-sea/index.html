@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <meta name="renderer" content="webkit">
+  <link rel="icon" href="../../favicon.ico" mce_href="https://img-os-static.hoyolab.com/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../../favicon.ico" mce_href="https://img-os-static.hoyolab.com/favicon.ico" type="image/x-icon">
+  <title></title>
+  <script>
+    (function(sa,fbc){function load(f,c){var a=document.createElement('script');
+      a.async=1;a.src=f;var s=document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(a,s);}load(sa);
+      window.addEventListener('load',function(){firebase.initializeApp(fbc).performance()});
+    })(
+      'https://webstatic-sea.mihoyo.com/dora/lib/firebase-performance/8.2.7/firebase-performance-standalone.js',
+      {
+        apiKey: "AIzaSyBVRYp2Xu1SQvdyUmbyDOg2NGsY7zx5Lb8",
+        authDomain: "mihoyo-web-performance.firebaseapp.com",
+        projectId: "mihoyo-web-performance",
+        storageBucket: "mihoyo-web-performance.appspot.com",
+        messagingSenderId: "248517372245",
+        appId: "1:248517372245:web:4f74098d76c0156df827dc",
+        measurementId: "G-8X60T8XQGK"
+      }
+    );
+  </script>
+<link href="1_3564e47abe18b9d37570.css" rel="stylesheet"><link href="bundle_68fd6543d418fe3e8f64.css" rel="stylesheet"></head>
+
+<body>
+  <div id="root"></div>
+  <script src="../../dora/lib/vue-sentry/2.6.11/vue.min.js"></script>
+  <script>
+    Sentry.init({
+      dsn: 'https://777db7a998824f5eaf1406e8836e87d3@sentry-sea.mihoyo.com/68',
+      integrations: [new Sentry.Integrations.Vue({Vue: Vue, attachProps: true, logErrors: true})],
+      ignoreErrors: [
+        'The play() request was interrupted',
+        'The operation was aborted',
+        '$ is not defined',
+        'mihoyo-event-dialog-cancel',
+        "play() failed because the user didn't interact with the document first",
+        'The play method is not allowed by the user agent or the platform in the current context'
+      ]
+    });
+  </script>
+  <script src="../../dora/biz/mihoyo-account-flow-sea/v2/main.js"></script>
+  <script src="../../dora/biz/mihoyo-analysis/v2/main.js"></script>
+<script type="text/javascript" src="vendors_1a15b11d48d45cd9561b.js"></script><script type="text/javascript" src="bundle_924be72a4084b198c9f1.js"></script></body>
+
+</html>
